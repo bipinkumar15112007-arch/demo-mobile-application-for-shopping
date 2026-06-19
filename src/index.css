@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #2563eb;
+  --color-brand-green-dark: #1d4ed8;
+  --color-brand-green-light: #eff6ff;
+  --color-brand-orange: #f97316;
+  --color-brand-orange-dark: #ea580c;
+  --color-brand-orange-light: #fff7ed;
+  --color-brand-navy: #0f172a;
+  --color-brand-navy-light: #f1f5f9;
+  
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom soft shadows */
+.shadow-soft {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.shadow-soft-hover:hover {
+  box-shadow: 0 8px 24px rgba(55, 71, 79, 0.08);
+}
+
+/* Beautiful custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Accent highlight styling for active tabs */
+.tab-accent {
+  position: relative;
+}
+.tab-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #2563eb;
+  border-radius: 99px;
+}

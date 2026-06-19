@@ -1,0 +1,6 @@
+{
+  "name": "Fresh Market",
+  "description": "An online fresh grocery store with Indian market products, location-based pin-code checking, regional shipping rates, and simulated local payments (UPI, Card, Netbanking).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
